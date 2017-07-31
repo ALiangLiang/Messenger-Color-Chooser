@@ -1,0 +1,27 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "content_scripts": [ {
+      "js": [ "main.js" ],
+      "matches": [ "*://*.messenger.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "content_security_policy": "script-src 'self' https://www.google.com https://checkout.google.com; object-src 'self'",
+   "default_locale": "zh_TW",
+   "description": "",
+   "devtools_page": "devtools.html",
+   "icons": {
+      "128": "icon/icon128.png",
+      "16": "icon/icon16.png",
+      "19": "icon/icon19.png",
+      "38": "icon/icon38.png",
+      "64": "icon/icon64.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAq4CbXRwdVrFGowuXwchu9umtKZdY/o0ULqrbuWj5vIdtg0Mrm14IDqoY45is86CFjtTqLigm5ydE+3GBwyG4CWq0wYXkynXuijqmJ2rCE1N4zfH876kXMtlzyiHWulehtH9BillIKtDNdeFUkhNtMjMYkN0jzKS85ZJNcTk8vsc7sfQRPa+AR48nwSK188Adpm7+v0xHhxAiPeo8T/q70Wdn0Oo9trY7LCfmWIWXiA5TVGf4dWBSqPWiyL3F0QaDJJCE/N4dCONut1jHyIPMyN8Bk8L2m5837dbL9BGtSTgezYEj/myqa3+61F2uD8aI22pW1PVblcycRK/CksZ4MwIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_extName__",
+   "permissions": [ "tabs", "webRequest", "*://*.messenger.com/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.0.2"
+}
